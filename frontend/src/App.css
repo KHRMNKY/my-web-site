@@ -1,0 +1,226 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+/* HEADER */
+
+.header {
+    background: white;
+    text-align: center;
+    padding: 35 20;
+    color: black;
+}
+
+.header-content h1 {
+    color: black;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.header-subtitle {
+    color: black;
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* NAVBAR */
+.navbar {
+  position: sticky;          
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px 10px;
+
+
+  background: white;    
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+
+  padding: 10px 14px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.10);
+  color: #39df33;
+  transform: translateY(-1px);
+}
+
+
+
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 40px auto 80px auto;
+  padding: 0 16px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: black;
+}
+
+.about-content {
+  max-width: 480px;
+  margin: 16px auto;
+  padding: 20px 24px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #333;
+}
+
+
+
+.article-card {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    
+}
+
+.article-card h2 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.article-card:hover {
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    border-color: #39df33;
+}
+
+
+
+
+/* Sayfadaki tüm video kartlarını saran alan */
+.video-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+/* Her bir video kartı */
+.video-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Başlık */
+.video-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+/* Açıklama */
+.video-description {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+/* Video oynatıcı */
+.video-player {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+
+/* Tarih */
+.video-date {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}

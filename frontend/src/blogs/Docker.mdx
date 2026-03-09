@@ -1,0 +1,32 @@
+---
+id: 2
+title: "Docker"
+date: "29 Mayıs 2025"
+slug: "docker"
+---
+
+# Docker
+
+Today, I decided to write a blog related to Docker. I think developers do not fully understand it, if they use it on projects and it remains abstract in their minds. I will try to help you understand it.
+
+Firstly let's start with what is it and why we need to use on our systems. Have you ever encountered like "I am sure it works on my local machine even ran so many tests but it does not work now on this system". Some of reasons can be that some dependencies are missing or different versions is installed.
+
+For saving from this problem, there are some of approaches. One of the these approaches is that replicating your model or project. Docker that enables us replicating approach is a way for this and that is why we need it. We package our project using it and project is localized in isolated environment by docker.
+
+Actually there is one more approach that most of developers know. This is that creating VM (virtual environment). You think VM replicates all system as well but there is big difference between them. You have to allocate your os (operating system) for VM but docker images use your os as resources directly.
+
+So why we should use docker instead VMs. Answer of this question is docker has more advantages:
+
+- Docker is **portable** that means you can run it anywhere or anytime.
+- Docker is more **lightweight** because it does not have its own os like VM.
+
+These features make it better choice from VM. According to what we understood, what docker is and which advantages it has, I will start from parts of docker.
+
+It consists of three parts as docker client, docker daemon and docker registry:
+
+- **Docker Client** is a way to interact with docker daemon using commands. You can see commands such as "docker pull, docker build" etc.
+- **Docker Daemon** (server) manages images and containers. Daemon listens commands from client and thus manages objects.
+- **Docker Registry** (you know it as docker hub) is location that stores images. It enables us to share images with other people.
+
+Docker containers is an instance that is runnable of images.
+

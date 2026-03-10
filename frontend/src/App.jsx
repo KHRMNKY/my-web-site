@@ -4,6 +4,7 @@ import HeaderFunc from "./components/headComp.jsx";
 import NavbarComp from "./components/NavbarComp.jsx";
 import Aboutfunc from './pages/about.jsx';
 import Videopage from './pages/Videopage.jsx';  
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
 const blog = {
@@ -15,15 +16,18 @@ const blog = {
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
+      <HeaderFunc />
+      <NavbarComp />
 
-    <HeaderFunc/>
-    <NavbarComp/>
-    /*
-    <Videopage/>
-    */
-    
-    </>
+      <Routes>
+        <Route path="/" element={<Aboutfunc/>} />
+        <Route path="/about" element={<Aboutfunc/>} />
+        <Route path="/video" element={<Videopage/>} />
+        <Route path="/blog" element={<BlogComponent blog={blog} />} />
+
+      </Routes>
+    </BrowserRouter>
 
   )
 }

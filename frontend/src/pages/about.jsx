@@ -1,4 +1,4 @@
-function Aboutfunc() {
+function AboutPage() {
     return (
         <section id="about" className="about-section">
         <h2 className="about-title">About</h2>
@@ -9,7 +9,7 @@ function Aboutfunc() {
             I'm passionate about creating machine learning systems to solve real-world problems that I encounter
             in my daily life.
             </p>
-        </div>
+        </div> 
 
         <div className="about-content">
             <p>
@@ -28,4 +28,4 @@ function Aboutfunc() {
     );
 }
 
-export default Aboutfunc;
+export default AboutPage;

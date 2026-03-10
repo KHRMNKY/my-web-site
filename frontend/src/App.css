@@ -224,3 +224,15 @@ body {
   color: #6b7280;
   margin-top: 4px;
 }
+
+
+
+
+.blog-page {
+  color: black;      /* MDX içindeki tüm yazılar siyah olsun */
+  padding: 0 24px; 
+}
+
+
+
+

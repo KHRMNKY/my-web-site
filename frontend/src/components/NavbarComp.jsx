@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 function NavbarComp() {
     return(
 
-    <div className="navbar">
-    <a className="active" href="about">About</a>
-    <a href="blogs">Blog</a>
-    <a href="video">Video</a>
-    </div>
+    <navbar className="navbar">
+        <Link to="about">About</Link>
+        <Link to="blogs">Blog</Link>
+        <Link to="video">Video</Link>
+    </navbar>
     );
 }
 
